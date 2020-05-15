@@ -8,8 +8,9 @@ public class prova {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int ap;
+		int ap, atraso;
 		double tm;
+		char mc;
 		
 		// CABECALHO
 		
@@ -26,6 +27,11 @@ public class prova {
 		
 		// LEITURA DOS OUTROS DADOS
 		
+		System.out.println();
+		System.out.printf("Quantas vezes o cliente atrasou o pagamento? ");
+		atraso = sc.nextInt();
+		System.out.printf("A maioria das compras foi em dinheiro, cartão, ou boleto (D/C/B)? ");
+		mc = sc.next().charAt(0);
 		System.out.println();
 		
 		
