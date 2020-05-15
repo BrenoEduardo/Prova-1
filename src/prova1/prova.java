@@ -34,6 +34,21 @@ public class prova {
 		mc = sc.next().charAt(0);
 		System.out.println();
 		
+		// SCORE DE VOLUME DE COMPRAS
+		
+		if(tm==0) {
+			System.out.println("Score de volume de compras = 0 pontos");
+		}
+		else if(tm>0 && tm<=3000 && ap>2) {
+			System.out.println("Score de volume de compras = 40 pontos");
+		}
+		else if(tm>0 && tm<=3000) {
+			System.out.println("Score de volume de compras = 20 pontos");
+		}
+		else {
+			System.out.println("Score de volume de compras = 60 pontos");
+		}
+		System.out.println();
 		
 		sc.close();
 		
