@@ -8,7 +8,7 @@ public class prova {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int ap, atraso;
+		int ap, atraso, stotal, sinadi, sfp, classfinal;
 		double tm;
 		char mc;
 		
@@ -38,15 +38,19 @@ public class prova {
 		
 		if(tm==0) {
 			System.out.println("Score de volume de compras = 0 pontos");
+			stotal=0;
 		}
 		else if(tm>0 && tm<=3000 && ap>2) {
 			System.out.println("Score de volume de compras = 40 pontos");
+			stotal=40;
 		}
 		else if(tm>0 && tm<=3000) {
 			System.out.println("Score de volume de compras = 20 pontos");
+			stotal=20;
 		}
 		else {
 			System.out.println("Score de volume de compras = 60 pontos");
+			stotal=60;
 		}
 		System.out.println();
 		
@@ -54,20 +58,28 @@ public class prova {
 		
 		if(atraso>1 || ap==0) {
 			System.out.println("Score de inadimplência = 0 pontos");
+			sinadi=0;
 		}
 		else if(ap>0 && atraso>=1) {
 			System.out.println("Score de inadimplência = 15 pontos");
+			sinadi=15;
 		}
 		else {
 			System.out.println("Score de inadimplência = 30 pontos");
+			sinadi=30;
 		}
 		if(ap>0 && mc=='D'){
 			System.out.println("Score de forma de pagamento = 5 pontos");
+			sfp=5;
 		}
 		else {
 			System.out.println("Score de forma de pagamento = 10 pontos");
+			sfp=10;
 		}
 		System.out.println();
+		
+		
+		
 		sc.close();
 		
 }
