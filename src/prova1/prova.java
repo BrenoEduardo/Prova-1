@@ -50,6 +50,24 @@ public class prova {
 		}
 		System.out.println();
 		
+		//SCORES DE INADIMPLENCIA E PAGAMENTOS
+		
+		if(atraso>1 || ap==0) {
+			System.out.println("Score de inadimplência = 0 pontos");
+		}
+		else if(ap>0 && atraso>=1) {
+			System.out.println("Score de inadimplência = 15 pontos");
+		}
+		else {
+			System.out.println("Score de inadimplência = 30 pontos");
+		}
+		if(ap>0 && mc=='D'){
+			System.out.println("Score de forma de pagamento = 5 pontos");
+		}
+		else {
+			System.out.println("Score de forma de pagamento = 10 pontos");
+		}
+		System.out.println();
 		sc.close();
 		
 }
