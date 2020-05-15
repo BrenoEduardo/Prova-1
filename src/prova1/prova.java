@@ -78,7 +78,19 @@ public class prova {
 		}
 		System.out.println();
 		
+		//CLASSIFICACAO FINAL
 		
+				classfinal = stotal + sinadi + sfp;
+				if(classfinal==0 && classfinal<=25) {
+					System.out.printf("Classificação final = CLIENTE BRONZE");
+				}
+				else if(classfinal>25 && classfinal<=75) {
+					System.out.printf("Classificação final = CLIENTE PRATA");
+				}
+				else {
+					System.out.printf("Classificação final = CLIENTE OURO");
+				}
+				
 		
 		sc.close();
 		
